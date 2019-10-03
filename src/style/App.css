@@ -7,6 +7,10 @@
   height: 50vmin;
 }
 
+.navbar {
+  background-color: #F16E10;
+}
+
 .App-header {
   background-color: #ffffff;
   min-height: 10vh;
