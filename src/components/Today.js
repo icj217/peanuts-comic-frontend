@@ -1,22 +1,22 @@
 import React from 'react';
 import API from '@aws-amplify/api'
-import { Image, Spinner } from 'react-bootstrap'
-import '../style/App.css';
+import { Image, Spinner, Row } from 'react-bootstrap'
 
 const ImageWithText = (props) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
   const month = monthNames[props.comic.pub_month-1]
-  const comicType = props.comic.comic_type.substring(0,1).toUpperCase() + props.comic.comic_type.substring(1)
+  let comicType = props.comic.comic_type.substring(0,1).toUpperCase() + props.comic.comic_type.substring(1)
+  comicType = comicType.split('.')[0]
   return (
     <div>
       <br/>
-      <h2>Today's Comic</h2>
+      <h2><u>Today's Comic</u></h2>
       <p>
-        Year Published: {props.comic.pub_year}
-        <br/>
         Month Published: {month}
+        <br/>
+        Year Published: {props.comic.pub_year}
         <br/>
         Comic Type: {comicType}
       </p>
@@ -40,20 +40,15 @@ class Today extends React.Component {
     this.setState({ comic: today })
   }
 
-  async getToday() {
-    const data = await fetch('from:api')
-    return data
-  }
-
   render() {
     return (
-      <div className="App">
-            {
-                this.state.comic
-                ? <ImageWithText comic={this.state.comic} />
-                : <Spinner animation="border" />
-            }
-      </div>
+        <Row>
+          {
+            this.state.comic
+            ? <ImageWithText comic={this.state.comic} />
+            : <Spinner animation="border" />
+          }
+        </Row>
     );
   }
 }
