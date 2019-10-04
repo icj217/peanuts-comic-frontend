@@ -2,7 +2,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 2vh
+  padding: 2vh;
+  height: 100vh;
 }
 
 .App-logo {
@@ -23,10 +24,12 @@
 .App-body {
   background-color: #ffffff;
   min-height: 10vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
   font-size: calc(5px + 2vmin);
 }
 
@@ -37,5 +40,4 @@
 .navbar,
 .navbar-default {
     background-color: #fecb31 !important;
-    
 }

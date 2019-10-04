@@ -18,11 +18,10 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
         <Container className="App">
           <Row>
             <Col>
-              <Navbar expand="lg">
+              <Navbar expand="md">
                 <LinkContainer to="/">
                   <Navbar.Brand>Peanuts Today</Navbar.Brand>
                 </LinkContainer>
@@ -33,9 +32,9 @@ class App extends React.Component {
                       <Nav.Link>Today's Comic</Nav.Link>
                     </LinkContainer>
                   </Nav>
+                  <br></br>
                   <Form inline>
                     <FormControl type="text" disabled={true} placeholder="Search coming soon!" className="mr-sm-2" />
-                    <Button variant="outline-secondary">Search</Button>
                   </Form>
                 </Navbar.Collapse>
               </Navbar>
@@ -52,7 +51,6 @@ class App extends React.Component {
             </Switch>
           </div>
         </Container>
-      </div>
     );
   }
 }
