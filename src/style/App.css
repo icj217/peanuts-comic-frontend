@@ -1,14 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   padding: 2vh
 }
 
 .App-logo {
   height: 50vmin;
-}
-
-.navbar {
-  background-color: #F16E10;
 }
 
 .App-header {

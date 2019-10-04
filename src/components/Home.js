@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap'
 import CharlieBrown from '../assets/charlie_brown.svg'
 import Snoopy from '../assets/snoopy.svg'
+import '../style/Home.css'
 
 class Home extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Home extends React.Component {
   
   render() {
     return (
-      <div className="App-body">
+      <div className="Home-body">
         <Row>
           <Col>
             <img src={this.state.image} alt={this.state.imageName} className="App-logo" onClick={() => this.changeImage(this.state)} />
@@ -28,7 +29,7 @@ class Home extends React.Component {
         <Row>
           <Col>
             <p>Peanuts comic strips delivered straight to your inbox, daily!</p>
-            <Button>Sign Up</Button>
+            <Button disabled>Email Delivery Coming Soon!</Button>
           </Col>
         </Row>
       </div>)
