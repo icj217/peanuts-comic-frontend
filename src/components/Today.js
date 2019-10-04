@@ -1,6 +1,7 @@
 import React from 'react';
 import API from '@aws-amplify/api'
 import { Image, Spinner, Row } from 'react-bootstrap'
+import '../style/Today.css'
 
 const ImageWithText = (props) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -42,13 +43,15 @@ class Today extends React.Component {
 
   render() {
     return (
-        <Row>
+        <div className="Today-body">
+          <Row className="Today-body">
           {
             this.state.comic
             ? <ImageWithText comic={this.state.comic} />
             : <Spinner animation="border" />
           }
-        </Row>
+          </Row>
+        </div>
     );
   }
 }
