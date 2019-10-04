@@ -22,7 +22,7 @@ class App extends React.Component {
         <Container className="App">
           <Row>
             <Col>
-              <Navbar bg="light" expand="lg">
+              <Navbar expand="lg">
                 <LinkContainer to="/">
                   <Navbar.Brand>Peanuts Today</Navbar.Brand>
                 </LinkContainer>
@@ -35,7 +35,7 @@ class App extends React.Component {
                   </Nav>
                   <Form inline>
                     <FormControl type="text" disabled={true} placeholder="Search coming soon!" className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="outline-secondary">Search</Button>
                   </Form>
                 </Navbar.Collapse>
               </Navbar>

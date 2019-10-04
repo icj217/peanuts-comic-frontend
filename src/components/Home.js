@@ -29,7 +29,7 @@ class Home extends React.Component {
         <Row>
           <Col>
             <p>Peanuts comic strips delivered straight to your inbox, daily!</p>
-            <Button disabled>Email Delivery Coming Soon!</Button>
+            <Button variant="secondary" disabled>Email Delivery Coming Soon!</Button>
           </Col>
         </Row>
       </div>)
