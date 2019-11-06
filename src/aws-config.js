@@ -5,7 +5,7 @@ const staging = {
                 name: "comics",
                 endpoint: "https://api.peanuts.today/staging",
                 custom_header: async () => { 
-                    return { 'x-api-key' : '***REMOVED***' } 
+                    return { 'x-api-key' : process.env.APIG_API_KEY } 
                   }
             }
         ]
@@ -19,7 +19,7 @@ const production = {
                 name: "comics",
                 endpoint: "https://api.peanuts.today/production",
                 custom_header: async () => { 
-                    return { 'x-api-key' : '***REMOVED***' } 
+                    return { 'x-api-key' : process.env.APIG_API_KEY } 
                   }
             }
         ]
