@@ -1,5 +1,7 @@
 # Peanuts Comic Frontend
 
+A simple React website to display Peanuts comic strips. Deployed using [AWS Amplify](https://aws.amazon.com/amplify/). Styling done with [React Bootstrap](https://react-bootstrap.github.io/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
